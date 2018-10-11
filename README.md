@@ -8,9 +8,7 @@ I've kept some of the create-react-app documentation below that explains the ste
 
 The motivation behind this simple project is to take the React skills I'm learning and solidifying them with a project rather than a course/tutorial. 
 
-
-
-`Begin of the create-react-app documentation:`
+## Begin of the create-react-app documentation:
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
