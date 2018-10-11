@@ -1,4 +1,4 @@
-This is a personal project where I'm rebuilding my existing live site [jeffnhorner.com](https://www.jeffnhorner.com) that is built in html, css, bootstrap, and jQuery to a React app. 
+This is a personal project where I'm rebuilding my existing live site [jeffnhorner.com](https://www.jeffnhorner.com) that is running on html, css, bootstrap, and jQuery to a React app. 
 
 I've kept some of the create-react-app documentation below that explains the steps to to take if you clone the repo and want to run this app locally. It's a work in progress. There is a lot of work to do:
 
