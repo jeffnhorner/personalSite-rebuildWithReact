@@ -10,7 +10,7 @@ The motivation behind this simple project is to take the React skills I'm learni
 
 
 
-Begin of the create-react-app documentation:
+`Begin of the create-react-app documentation:`
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
