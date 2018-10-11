@@ -1,6 +1,6 @@
 This is a personal project where I'm rebuilding my existing live site [jeffnhorner.com](https://www.jeffnhorner.com) that is running on html, css, bootstrap, and jQuery to a React app. 
 
-I've kept some of the create-react-app documentation below that explains the steps to to take if you clone the repo and want to run this app locally. It's a work in progress. There is a lot of work to do:
+I've kept some of the create-react-app documentation below that explains the steps to to take if you clone the repo and want to run this app locally. It's a work in progress. There is a lot of work to do. Here are a few I'm currently working on:
 
 - Organizing the css files into individual css files that are tied to individual components. Outside of individual style sheets, there will also be a global style sheet that renders with the most parent component.
 - Organizing the navigation with reach-router to be more best practice that I'm currently using it
