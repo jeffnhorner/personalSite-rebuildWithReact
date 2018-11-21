@@ -82,7 +82,8 @@ ul.nav.navbar-nav{
 }
 .navbar-nav>li {
   display: inline-block;
-  float:none;
+  float: none;
+  margin: 0px 1px;
 }
 .navbar-nav {
   float:none;

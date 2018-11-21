@@ -10,7 +10,7 @@ class HomePage extends Component {
       <div id="home" className="main-content">
         <h2>Jeff Horner</h2>
         <div className="cc-container-main">
-          <h1>UX/UI Developer & Designer</h1>
+          <h1>Developer.Designer.Creative</h1>
           <p>Passionate purpose-driven Web Developer & Designer based in Houston, Texas with an emphasis on making online experiences memorable.</p>
           <div className="profile-list">
             <a href="https://www.facebook.com/jeffnhorner" rel="noopener noreferrer" target="_blank" title="My Facebook Profile"><i className="fa fa-facebook profiles" aria-hidden="true"></i></a>
