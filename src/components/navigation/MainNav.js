@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { Link } from '@reach/router';
 
 import '../../styles/styles.css';
@@ -39,6 +40,13 @@ class MainNav extends Component {
       });
       console.log(`the urlPath was updated to ${windowPath} but the instance urlPath is` + this.state.urlPath);
     }
+  }
+
+  componentDidUpdate() {
+    let el = ReactDOM.findDOMNode(this);
+    setTimeout(function () {
+      el.classList.remove("in");
+    }, 0);
   }
 
   render(){
