@@ -85,6 +85,13 @@
     font-size: 1.8rem;
     margin: 20px auto 50px auto;
   }
+  body.learn-to-code .navbar-inverse .navbar-toggle span {
+    color: #fff !important;
+    background-color: #fff !important;
+  }
+  body.learn-to-code nav.navbar {
+    width: 100%;
+  }
   .profile-list {
     margin-bottom: 10px;
   }

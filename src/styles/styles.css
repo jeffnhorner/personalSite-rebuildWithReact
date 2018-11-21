@@ -20,7 +20,7 @@ footer {
 body#page-3 footer {
   bottom: inherit;
 }
-body#page-4 footer {
+body.learn-to-code footer {
   width: 100%;
   color: #fff;
 }
@@ -58,7 +58,7 @@ nav {
   color: #0072ff !important;
   font-weight: 600 !important;
 }
-body#page-4 .nav-link-contact {
+body.learn-to-code .nav-link-contact {
   background-color: #0072ff;
   color: #fff !important;
 }
@@ -103,7 +103,7 @@ ul.nav.navbar-nav{
   bottom: 11px;
   transition: width .65s;
 }
-body#page-4 .navitem::after {
+body.learn-to-code .navitem::after {
   background-color: #fff;
 }
 .nav-link-contact::after {
@@ -129,8 +129,11 @@ body#page-4 .navitem::after {
   position: relative;
   bottom: 11px;
 }
-body#page-4 .navbar-inverse .navbar-nav>.active>a::after {
+body.learn-to-code .navbar-inverse .navbar-nav>.active>a::after {
   background-color: #fff !important;
+}
+body.learn-to-code .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
 }
 .navbar-inverse .navbar-nav>.active>.nav-link-contact::after {
   background-color: #3470b4 !important;
@@ -411,7 +414,17 @@ div#learn-to-code {
   width: 100%;
   text-align: center;
 }
-body#page-4 #main-content {
+body.learn-to-code #left-side {
+  display: none;
+}
+body.learn-to-code #right-side {
+  width: 100%;
+}
+body.learn-to-code nav.navbar {
+  width: 50%;
+  float: right;
+}
+body.learn-to-code #app {
   background-image: url("../assets/images/learn-to-code1.jpg");
   background-size: cover;
   background-position: 15%;
@@ -421,38 +434,41 @@ body#page-4 #main-content {
   width: 100%;
   position: fixed;
 }
-body#page-4 .navbar-inverse {
+body.learn-to-code .navbar-inverse {
   background-color: transparent;
   border-color: transparent;
 }
-body#page-4 .navbar-inverse .navbar-nav>.active>a {
+body.learn-to-code .navbar-inverse .navbar-nav>.active>a {
   background-color: transparent !important;
 }
-body#page-4 .navbar-inverse .navbar-nav>li>a {
+body.learn-to-code .navbar-inverse .navbar-nav>li>a {
   color: #fff;
 }
-body#page-4 .cc-container-internal {
+body.learn-to-code .cc-container-internal {
   max-width: 700px;
   margin: 120px auto auto auto;
 }
-/* #learn-to-code .cta #connect {
+#learn-to-code .cta #connect {
   background: transparent !important;
   box-shadow: none;
-  border: 2px solid #428ce1;
-  color: #428ce1 !important;
-  box-shadow: inherit;
+  border: 2px solid #fff;
+  color: #fff !important;
+  box-shadow: none;
+}
+#learn-to-code .cta #jobs {
+  box-shadow: none;
 }
 #learn-to-code .cta #connect:hover{
   background: #fff !important;
   background-color: #fff;
-  color: #262626;
+  color: #262626 !important;
   opacity: 1;
-} */
+}
 #learn-to-code .cc-container-internal {
   text-align: left;
 }
 #learn-to-code h1 {
-  color: #0072ff;
+  color: #fff;
   font-size: 13rem;
   font-weight: 900;
 }

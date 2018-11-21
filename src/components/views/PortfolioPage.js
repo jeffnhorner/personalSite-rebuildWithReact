@@ -25,7 +25,7 @@ class PortfolioPage extends Component {
         <div className="cc-container-internal">
           <h1>My Work</h1>
           <hr />
-          <p>My primary focus is frontend web development and design. I'm passionate about creating beautiful and easy to use websites. I also really enjoy building web applications. Lastly, I do offer maintenance plans as well as backend development. For any of these needs, please <a className="p-link" href="contact.html">get in touch</a> with me!</p><br />
+          <p>My primary focus is frontend web development and design. I'm passionate about creating beautiful and easy to use websites. I also really enjoy building web applications. Lastly, I do offer maintenance plans as well as backend development. For any of these needs, please <Link className="p-link" to="/contact">get in touch</Link> with me!</p><br />
           <h4>Design & Development</h4>
           <br />
             <div className="my-work">
