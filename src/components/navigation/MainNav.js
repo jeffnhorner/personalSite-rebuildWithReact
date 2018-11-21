@@ -33,12 +33,12 @@ class MainNav extends Component {
       activeIndex: index
     })
 
-    if(this.state.urlPath !== windowPath) {
-      this.setState({
-        activeIndex: index,
-        urlPath: window.location.href
-      });
-      console.log(`the urlPath was updated to ${windowPath} but the instance urlPath is` + this.state.urlPath);
+    //when using the navigation links, this adds a unique class to the learn-to-code webapge if the window.location.href equals the learn-to-code webpage path. This way, the styling can be controlled from the body tag level.
+    if (window.location.href === 'http://localhost:3000/learn-to-code') {
+      console.log('learn-to-code');
+      document.body.classList.add('learn-to-code');
+    } else {
+      document.body.classList.remove('learn-to-code');
     }
   }
 
@@ -56,11 +56,11 @@ class MainNav extends Component {
        <ul className="nav navbar-nav">
 
         {/* the below is stating if the active index === the index number it's assigned on click, add the class 'active'. Otherwise, the li will not get a class name. */}
-        <li className={this.state.activeIndex===0 ? 'active' : null} onClick={this.toggleClass.bind(this, 0)}><Link className="navitem" to="/">Home</Link></li>
-        <li className={this.state.activeIndex===1 ? 'active' : null} onClick={this.toggleClass.bind(this, 1)}><Link className="navitem" to="/about">About</Link></li>
-        <li className={this.state.activeIndex===2 ? 'active' : null} onClick={this.toggleClass.bind(this, 2)}><Link className="navitem" to="/portfolio">Portfolio</Link></li>
-        <li className={this.state.activeIndex===3 ? 'active' : null} onClick={this.toggleClass.bind(this, 3)}><Link className="navitem" to="/learn-to-code">Learn to Code</Link></li>
-        <li className={this.state.activeIndex===4 ? 'active' : null} onClick={this.toggleClass.bind(this, 4)}><Link className="navitem nav-link-contact" to="/contact">Contact</Link></li>
+        <li activeClassName="active" onClick={this.toggleClass.bind(this, 0)}><Link className="navitem" to="/">Home</Link></li>
+        <li activeClassName="active" onClick={this.toggleClass.bind(this, 1)}><Link className="navitem" to="/about">About</Link></li>
+        <li activeClassName="active" onClick={this.toggleClass.bind(this, 2)}><Link className="navitem" to="/portfolio">Portfolio</Link></li>
+        <li activeClassName="active" onClick={this.toggleClass.bind(this, 3)}><Link className="navitem" to="/learn-to-code">Learn to Code</Link></li>
+        <li activeClassName="active" onClick={this.toggleClass.bind(this, 4)}><Link className="navitem nav-link-contact" to="/contact">Contact</Link></li>
 
        </ul>
       </div>

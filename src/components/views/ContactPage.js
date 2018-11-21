@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from '@reach/router';
 
 import '../../styles/styles.css';
 import '../../styles/responsive.css';
@@ -10,7 +11,12 @@ class HomePage extends Component {
     this.state = {
       text: ''
     }
-    // this.onInputChange = this.onInputChange.bind(this);
+    this.addClass = this.addClass.bind(this);
+  }
+
+  //adds learn-to-code class if in page link to that webpage is clicked
+  addClass() {
+    document.body.classList.add('learn-to-code');
   }
 
 
@@ -23,7 +29,7 @@ class HomePage extends Component {
           <div className="form-constrain">
             <div className="form-intro">
               <p>If you are interested in any of my web development services or would like to speak about a job offer, please complete the below contact form. I will reach out to you within 48 hours to discuss your submission.</p>
-              <p>Want to learn web development but don't know where to start? Another passion of mine is helping people who are interested in coding but don't know how to begin their learning journey. Send me a message or visit my <a className="p-link" href="/pages/learn-to-code.html">Learn to Code</a> page to get a few pointers!</p>
+              <p>Want to learn web development but don't know where to start? Another passion of mine is helping people who are interested in coding but don't know how to begin their learning journey. Send me a message or visit my <Link onClick={this.addClass} className="p-link" to='/learn-to-code'>Learn to Code</Link> page to get a few pointers!</p>
               <p className="required-notification">All fields with * are required</p>
             </div>
             <form method="post" name="myemailform" action="../php/form-to-email.php" className="form">
